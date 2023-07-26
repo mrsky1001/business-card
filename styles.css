@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+:root {
+    --regular-font: 'Montserrat Regular', sans-serif;
+    --medium-font: 'Montserrat Medium', sans-serif;
+    --light-font: 'Montserrat Light', sans-serif;
+    --title-font-size: 100px;
+    --manager-name-font-size: 24px;
+    --subtext-font-size: 20px;
+    --title-color: #E84E42;
+    --letter-space: 1px;
+}
+
+body {
+    font-family: var(--light-font);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    height: 208px;
+
+    padding:80px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Title classes */
+
+.container .title-container {
+    color: var(--title-color);
+}
+
+.container .title-container .title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--light-font);
+    font-size: var(--title-font-size);
+}
+
+.container .title-container .title .main{
+    line-height: 60px;
+}
+
+.container .title-container .subtitle {
+    padding-left: 9px;
+
+    font-family: var(--regular-font);
+    font-size: 16px;
+}
+
+/* Contacts classes */
+
+.container .contacts-container {
+    position: relative;
+
+    height: 100%;
+    margin-top: -7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .contacts-container .manager-name {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    letter-spacing: var(--letter-space);
+}
+
+.container .contacts-container .manager-name .name {
+    font-family: var(--medium-font);
+    font-size: var(--manager-name-font-size);
+    font-weight: bold;
+}
+
+.container .contacts-container .manager-name .description {
+    padding-top: 5px;
+}
+
+.container .contacts-container .contacts {
+    height: 48%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    font-family: var(--regular-font);
+    letter-spacing: var(--letter-space);
+}
+
+.container .contacts-container .contacts .subtext {
+    font-family: var(--regular-font);
+    font-size: 16px;
+    color: var(--title-color);
+}
+
+.container .contacts-container .contacts .number-email,.address{
+    font-size: 18px;
+
+    font-family: var(--medium-font);
+}
+
+
+
+
+
+
+
+
+
+
+
+
